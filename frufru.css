@@ -551,7 +551,7 @@ img { border-radius: 20px; }
 /* ======== SOBRE MIM - CENTRALIZADO ======== */
 /* ======== SOBRE MIM - CENTRALIZADO ======== */
 /* ====== SOBRE MIM – TOTALMENTE CENTRALIZADO ====== */
-.about {
+about {
     display: flex;
     justify-content: center;
     align-items: center;    /* centraliza verticalmente o conteúdo */
@@ -576,9 +576,8 @@ img { border-radius: 20px; }
 
 /* subtítulo */
 .about-content h3 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     margin-bottom: 1.5rem;
-    margin-top: 5rem;
 }
 
 /* textos */
@@ -586,7 +585,6 @@ img { border-radius: 20px; }
     font-size: 2.0rem;
     line-height: 1.8;
     margin-bottom: 1.2rem;
-     margin-top: 4rem;
 }
 
 /* lista */
@@ -594,14 +592,12 @@ img { border-radius: 20px; }
     list-style: none;
     padding: 0;
     margin: 2rem 0;
-    text-align: center; /* NOVO: Centraliza o texto dos itens da lista */
-     margin-top: 4rem;
+    text-align: center;
 }
 
 .about-list li {
     font-size: 2.4rem;
     margin-bottom: 2rem;
-    margin-top: 4rem;
 }
 
 /* cor dos destaques (igual serviços) */
@@ -612,12 +608,14 @@ img { border-radius: 20px; }
 /* botão */
 .about-content .btn {
     margin-top: 2rem;
-    display: block; /* Transforma o botão em um elemento de bloco */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-    width: fit-content; /* Garante que o elemento de bloco não ocupe 100% da largura, mas apenas o necessário */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
+
+/* 📱 ESTILOS PARA DISPOSITIVOS MÓVEIS (MAX-WIDTH: 768PX) 📱 */
 @media (max-width: 768px) {
     /* Diminui o padding da seção para dar mais espaço de conteúdo */
     about {
@@ -643,5 +641,10 @@ img { border-radius: 20px; }
     .about-list li {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
+    }
+
+    /* 🚨 NOVO: Oculta o contêiner da animação "Desenvolvedor Web" */
+    .profession-container {
+        display: none;
     }
 }
