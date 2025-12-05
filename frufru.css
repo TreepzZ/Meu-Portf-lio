@@ -612,6 +612,10 @@ img { border-radius: 20px; }
 /* botão */
 .about-content .btn {
     margin-top: 2rem;
+    display: block; /* Transforma o botão em um elemento de bloco */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    width: fit-content; /* Garante que o elemento de bloco não ocupe 100% da largura, mas apenas o necessário */
 }
 
 @media (max-width: 768px) {
