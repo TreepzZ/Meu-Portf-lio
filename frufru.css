@@ -613,3 +613,31 @@ img { border-radius: 20px; }
 .about-content .btn {
     margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+    /* Diminui o padding da seção para dar mais espaço de conteúdo */
+    about {
+        padding: 6rem 1rem;
+    }
+
+    /* Diminui o tamanho da fonte do título principal */
+    .about-content .heading {
+        font-size: 4rem;
+    }
+
+    /* Diminui o tamanho do subtítulo */
+    .about-content h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Diminui o tamanho das fontes dos parágrafos */
+    .about-content p {
+        font-size: 1.6rem;
+    }
+
+    /* Diminui o tamanho das fontes da lista e o espaçamento */
+    .about-list li {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
